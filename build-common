@@ -28,7 +28,7 @@ case $ARCH in
         SYSROOT=${SYSROOT:-"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator$SDK_VERSION.sdk"}
         ;;
     *)
-        CC=${SYSROOT:-"/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2"}
+        CC=${CC:-"/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2"}
         # cpp-4.2 seems broken
         CPP=${CPP:-"/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/cpp"}
         AS=${AS:-"$CC"}
